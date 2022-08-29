@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, #566caf,#041955);
+    color: white;
+    font-family: "poppins", sans-serif;
+    min-height: 100vh;
+}
+header{
+    font-size: 1.5rem;
+}
+
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button{
+    color: #041955;
+     background: white;
+     cursor: pointer;
+     transition:all .3s ease ;
+}
+form button:hover{
+    color: white;
+    background: #3450A1;
+}
+
+.todo-list{
+background-color: white;
+/* display: flex; */
+list-style: none;
+align-items: center;
+justify-content: center;
+width: 50vw;
+margin: 0 auto;
+color: black;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+/* styling each todo and its delet button */
+
+.delet-btn{
+
+    border: none;
+    padding: .5rem;
+    /* color: #f6d365; */
+    background: none;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.fas{
+    color: #3450A1;
+}
+.fas{
+    pointer-events: none;
+}
+.fas:hover{
+    color: #f6d365;
+}
