@@ -8,7 +8,7 @@ const  inputValue = document.querySelector("input")
 //         console.log('varun')
 
 // }
-let n =0
+// let n =0
 
 
 //event listner
@@ -18,7 +18,7 @@ list.addEventListener('click',deletCheck)
 
 
 function addTodo() {
-    if (n < 4) {
+    // if (n < 4) {
      //getting input text in inputValue
         // const inputValue
 
@@ -50,7 +50,7 @@ function addTodo() {
         //making item childern of list 
         list.appendChild(item)
 //increaing value of n 
-        n = n + 1
+        // n = n + 1
 //         console.log(item)
 // console.log(list)
     //calling function to get delet id
@@ -58,18 +58,18 @@ function addTodo() {
     //  getDeletId()
 
 
-    } else {
-        const contianer = document.querySelector(".todo-container")
-        const max = document.createElement("h1")
-        max.setAttribute('class','error')
-        max.innerText="Eroor"
-        contianer.appendChild(error.value)
-        console.log(max)
-        console.log(max.value)
-       contianer.appendChild(max)
-       console.log(contianer.value)
-        // contianer.insertBefore(max, contianer.children[0])
-    }
+    // } else {
+    //     const contianer = document.querySelector(".todo-container")
+    //     const max = document.createElement("h1")
+    //     max.setAttribute('class','error')
+    //     max.innerText="Eroor"
+    //     contianer.appendChild(error.value)
+    //     console.log(max)
+    //     console.log(max.value)
+    //    contianer.appendChild(max)
+    //    console.log(contianer.value)
+    //     // contianer.insertBefore(max, contianer.children[0])
+    // }
 }
 function deletCheck(e) {
     //storing the delet when click on
@@ -80,9 +80,9 @@ function deletCheck(e) {
           const todo=delet.parentElement
           todo.remove()
        
-console.log("delete called")
+// console.log("delete called")
 
-          n=n-1
+//           n=n-1
     }
 }
 
